@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  left: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header */
+/* #region */
+.header{
+  margin-top: 1%;
+  width: 100%;
+  height: 25rem ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header_img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header_items{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  margin-left: -9rem;
+  border-top: 2px solid orchid;
+  border-bottom: 2px solid orchid;
 }
 
-.App-link {
-  color: #61dafb;
+.header_items ul{
+  display: grid;
+  grid-template-columns: 100% 100%;
+  list-style-type: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.header_items ul li a{
+  text-decoration: none;
+  list-style-type: none;
+}
+/* #endregion */
+
+
+/* Menu  */
+/* #region */
+
+.menuwrapper{
+  background-color: rgb(202, 214, 202);
+}
+
+.menucontainer {
+  width: 50%;
+  margin: auto;
+}
+.menucontainer table {
+  width: 100%;
+}
+.menucontainer table tr {
+  width: 100%;
+  height: 40px;
+}
+.menucontainer table tr:nth-child(even) {
+  background: #e2e2e2;
+}
+.menucontainer table tr:nth-child(odd) {
+  background: #eee;
+}
+.menucontainer table tr:first-child {
+  text-decoration: bold;
+  font-weight: 700;
+  background: #222;
+  color: #eee;
+}
+.menucontainer table td {
+  padding: 5px;
+  text-align: center;
+  justify-content: center;
+}
+.menucontainer table button {
+  border: none;
+  color: #eee;
+  margin-left: 5px;
+  border-radius: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.menucontainer table button i {
+  font-size: 1rem;
+}
+.menucontainer table button:first-child {
+  background: #F13911;
+}
+.menucontainer table button:last-child {
+  background: #DF0D0D;
+}
+@media screen and (max-width: 768px){
+  .menucontainer {
+    width: 100%;
+    margin: auto;
   }
 }
+/* #endregion */
+
+/* Order */
+/* #region */
+
+.orderDisplay{
+  padding: 2rem;
+  margin: 2rem;
+}
+
+/* #endregion */
